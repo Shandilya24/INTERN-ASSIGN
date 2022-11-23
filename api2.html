@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        personality
+    </title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+        h1 {
+          text-align: center;
+          font-family: 'lato', cursive;
+        
+        }
+        body{
+            background-color: rgb(166, 169, 172);
+        }
+        h4{
+            text-align: center;
+            font-family: 'Charm', cursive;
+        }
+        div{
+            margin: auto;
+           width: 50%;
+              border: 3px solid rgb(173, 218, 173);
+              padding: 10px;
+            text-align: center;
+            background-color: burlywood;
+            font-family: 'Charm', cursive;
+           
+        }
+        
+div {
+   
+}
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1 >
+        WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?
+    </h1>
+    <div >
+    <h4>ENTER YOUR NAME</h4>
+<form action="/action_page.php">
+    
+    <input type="text" id="nname" name="nname" style="background-color: rgb(152, 65, 65);"><br><br>
+    <img src="https://img.freepik.com/premium-vector/modern-hand-drawn-welcome-composition_23-2147900389.jpg?w=2000" class="img1" alt="Cinque Terre" width="304" height="236"> <br><br>
+    <button type="button" class="btn btn-primary btn-lg">Click me</button>
+    
+  </form>
+ 
+</div>
+<script>
+     $(document).ready(function(){
+$('button').click(function(){
+    const name = $('#nname').val();
+  
+    $('.img1').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+    const b = $('.img1');
+    console.log(b);
+ 
+   });
+  });
+ </script>
+</body>
